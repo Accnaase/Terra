@@ -1,0 +1,74 @@
+*{
+
+	marginn: 0;
+	padding: 0;
+	box-sizing: border-box ;
+
+}
+	
+body{
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("espaço.jpg");
+	background-size: cover;
+	background-repeat: repeat-x;
+	animation: fundoAnimado 8s linear infinite;
+}
+
+.globo{
+
+	width: 400px;
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background: url("Terra.jpg");
+	background-size: cover;
+	background-repeat: repeat-x;
+	box-shadow: -25px -25px 25px black inset, 8px 8px 30px inset white, 0px 0px 20px #3a86ff;
+	animation: rotacionar 12s linear infinite;
+
+}
+/*
+.loading{
+	width: 200;
+	height: 200;
+	border: 8px solid rgba(0, 0, 0, .5);
+	border-left-color: #3a86ff;
+	border-right-color: #3a86ff;
+	border-radius: 50%;
+	animation: carregando 8s linear infinite;
+
+}
+
+*/
+
+@keyframes rotacionar{
+	to {
+		background-position: 209.5%;
+
+	}
+}
+@keyframes fundoAnimado{
+	0%{
+
+		background-position: 0;
+
+	}
+	100%{
+		background-position: 500%;
+
+	}
+
+}
+@keyframes carregando{
+	to {
+		tranform: rotate(360deg);
+
+	}
+}
